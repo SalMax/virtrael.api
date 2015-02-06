@@ -1,5 +1,5 @@
 #encoding=utf-8
-# Django settings for hygea project.
+# Django settings for virtrael project.
 import os
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
@@ -17,7 +17,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'vitadieta.info@gmail.com'
 EMAIL_HOST_PASSWORD = '3w2UwNhp'
-EMAIL_SUBJECT_PREFIX = '[VitaDieta] '
+EMAIL_SUBJECT_PREFIX = '[Virtrael] '
 
 
 MANAGERS = ADMINS
@@ -28,9 +28,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'virtrael',    # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'hygea_admin',   # 'b0efff926f94c0',
-        'PASSWORD': 'hygea2011', # 'a324a084',
-        'HOST': 'localhost',     # 'eu-cdbr-azure-west-b.cloudapp.net',
+        'USER': 'hygea_admin',  
+        'PASSWORD': 'hygea2011', 
+        'HOST': 'localhost',
         'PORT': '', # Set to empty string for default.
         'OPTIONS': {
              "init_command": "SET foreign_key_checks = 0;",
@@ -243,12 +243,11 @@ LOGGING = {
         'py.warnings': {
             'handlers': ['null', ]
         },
-        'hygea': {
+        'virtrael': {
             'level': 'DEBUG',
             'handlers': ['console', 'production_file', 'debug_file']
         }
     }
 }
 
-#Esto es para usar nuestro propio perfil de usuario
-#AUTH_PROFILE_MODULE = 'hygea_backend.UserProfile'
+
