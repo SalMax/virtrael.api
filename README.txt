@@ -1,3 +1,22 @@
+Paquetes UBUNTU
+
+GIT
+
+Apache2, Python y MySQL
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+
+apt-get install apache2
+apt-get install python
+apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+
+MySQL para Python
+
+http://codeinthehole.com/writing/how-to-set-up-mysql-for-python-on-ubuntu/
+
+Django
+http://blog.xenodesystems.com/2012/10/montar-entorno-de-desarrollo-python.html
+
 
 Configuracion Virtual Hosts de Apache (/etc/apache2/sites-available)
 
