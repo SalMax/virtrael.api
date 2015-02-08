@@ -12,8 +12,16 @@ from django.views.generic.base import TemplateView
 
 
 virtrael_api = Api(api_name='virtrael')
+virtrael_api.register(UserProfileResource())
+virtrael_api.register(UserAvatarResource())
+virtrael_api.register(CarerPatientResource())
+virtrael_api.register(TherapistPatientResource())
 virtrael_api.register(ExerciseErrorResource())
-# virtrael_api.register(UserResource())
+virtrael_api.register(ExerciseLevelResource())
+virtrael_api.register(ExerciseResultResource())
+virtrael_api.register(MedalResource())
+virtrael_api.register(PartialResultResource())
+virtrael_api.register(SessionLogResource())
 
 admin.autodiscover()
 

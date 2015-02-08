@@ -88,6 +88,38 @@ class UserResource(ModelResource):
         else:
             return self.create_response(request, { 'success': False }, HttpUnauthorized)
 
+class UserProfileResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Userprofile.objects.all()
+        resource_name = 'user_profile'
+
+class UserAvatarResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = UserAvatar.objects.all()
+        resource_name = 'user_avatar'
+
+class CarerPatientResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = CarerPatient.objects.all()
+        resource_name = 'carer_patient'
+
+class TherapistPatientResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = TherapistPatient.objects.all()
+        resource_name = 'therapist_patient'
+
 class ExerciseErrorResource(ModelResource):
     '''
         
@@ -95,4 +127,45 @@ class ExerciseErrorResource(ModelResource):
     class Meta:
         queryset = Exerciseerror.objects.all()
         resource_name = 'exercise_error'
+
+class ExerciseLevelResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Exerciselevel.objects.all()
+        resource_name = 'exercise_level'
+
+class ExerciseResultResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Exerciseerror.objects.all()
+        resource_name = 'exercise_result'
+
+class MedalResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Medal.objects.all()
+        resource_name = 'medal'
+
+class PartialResultResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Partialresult.objects.all()
+        resource_name = 'partial_result'
+
+class SessionLogResource(ModelResource):
+    '''
+        
+    '''
+    class Meta:
+        queryset = Sessionlog.objects.all()
+        resource_name = 'session_log'
+
 
