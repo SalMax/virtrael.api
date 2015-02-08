@@ -15,8 +15,8 @@ ADMINS = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'vitadieta.info@gmail.com'
-EMAIL_HOST_PASSWORD = '3w2UwNhp'
+EMAIL_HOST_USER = '' #poner aqui el usuario, ejemplo virtrael@gmail.com
+EMAIL_HOST_PASSWORD = '' #password de la cuenta
 EMAIL_SUBJECT_PREFIX = '[Virtrael] '
 
 
