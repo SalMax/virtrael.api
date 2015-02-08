@@ -156,10 +156,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.admin', #administracion de django
+    
     # 'django.contrib.admindocs',
-
-    'bootstrap_admin', #look basado en bootstrap (www.getbootstrap.com) para la administracion de Django    
+    #look basado en bootstrap (www.getbootstrap.com) para la administracion de Django 
+    'django-admin-bootstrapped', #debe estar ANTES de la app 'django.contrib.admin'
+    'django.contrib.admin', #administracion de django
     'tastypie', #API de servicios WEB,
     'south',    #API para la gestión de la bd
     'virtrael_api' #Api RESTFUL para la base de datos virtrael
