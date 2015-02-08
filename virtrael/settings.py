@@ -28,8 +28,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'virtrael',    # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'hygea_admin',  
-        'PASSWORD': 'hygea2011', 
+        'USER': 'root',  
+        'PASSWORD': 'virtrael', 
         'HOST': 'localhost',
         'PORT': '', # Set to empty string for default.
         'OPTIONS': {
