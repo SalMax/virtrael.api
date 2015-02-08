@@ -112,7 +112,7 @@ Con estos pasos básicos, ya deberías tener la aplicación funcionando.
 
 ##5. Funcionamiento Básico de la aplicación##
 
-Para los ejemplos sobre uso de Virtrael.api, trabaré el proyecto ya desplegado en Microsoft Azure, concretamente en www.vitrael.cloudapp.net
+Para los ejemplos sobre uso de Virtrael.api, tengo el proyecto ya desplegado en Microsoft Azure, concretamente en www.virtrael.cloudapp.net
 
 Para administrar la base de datos:
 ```
