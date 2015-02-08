@@ -63,6 +63,25 @@ Finalmente, reiniciamos Apache
 
 /etc/init.d/apache2 restart
 
+=== Dependencias ==
+
+Apps Django
+pip install admin-bootstrap - Look bootstrap para la administracion de Django
+pip install django-tastypie - Tastypie para crear servicios REST
+pip instarll simplejson - Json enconder/decoder para Python
+pip install south - Utilidad para migraciones y alteraciones de la base de datos en Django (muy buena!)
+
+
+Pasos:
+
+- Clonar repositorio GIT
+- Crear base de datos virtrael y añadirle el script virtrael.sql
+- Confiburar settings.py para conectar con la base de datos virtrael
+- Ejecutar python mange.py syncdb para crear crear las tablas de Django
+- Ejecuntar python manage.py migrate para las tablas de tastypie
+
+admin - virtrael como usuario admin de bootstrap
+
 
 
 
