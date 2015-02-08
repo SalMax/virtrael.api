@@ -82,7 +82,8 @@ Pasos:
 
 admin - virtrael como usuario admin de bootstrap
 
-
+Permisos para la carpeta log
+sudo chmod -R 777 log
 
 
 
