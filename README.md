@@ -1,3 +1,22 @@
+Paquetes UBUNTU
+
+GIT
+
+Apache2, Python y MySQL
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+
+apt-get install apache2
+apt-get install python
+apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+
+MySQL para Python
+
+http://codeinthehole.com/writing/how-to-set-up-mysql-for-python-on-ubuntu/
+
+Django
+http://blog.xenodesystems.com/2012/10/montar-entorno-de-desarrollo-python.html
+
 
 Configuracion Virtual Hosts de Apache (/etc/apache2/sites-available)
 
@@ -43,6 +62,25 @@ a2ensite virtrael.conf
 Finalmente, reiniciamos Apache
 
 /etc/init.d/apache2 restart
+
+=== Dependencias ==
+
+Apps Django
+pip install admin-bootstrap - Look bootstrap para la administracion de Django
+pip install django-tastypie - Tastypie para crear servicios REST
+pip instarll simplejson - Json enconder/decoder para Python
+pip install south - Utilidad para migraciones y alteraciones de la base de datos en Django (muy buena!)
+
+
+Pasos:
+
+- Clonar repositorio GIT
+- Crear base de datos virtrael y añadirle el script virtrael.sql
+- Confiburar settings.py para conectar con la base de datos virtrael
+- Ejecutar python mange.py syncdb para crear crear las tablas de Django
+- Ejecuntar python manage.py migrate para las tablas de tastypie
+
+admin - virtrael como usuario admin de bootstrap
 
 
 

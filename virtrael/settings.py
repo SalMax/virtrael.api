@@ -106,6 +106,7 @@ SECRET_KEY = 'x#=auw=%k3&&62&@-$o^k^x&$x0-h1q@ni8cs#btsk_4#=3&_v'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.app_directories.load_template_source'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -155,11 +156,10 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'bootstrap_admin', #look basado en bootstrap (www.getbootstrap.com) para la administracion de Django
     'django.contrib.admin', #administracion de django
-    # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+
+    'bootstrap_admin', #look basado en bootstrap (www.getbootstrap.com) para la administracion de Django    
     'tastypie', #API de servicios WEB,
     'south',    #API para la gestión de la bd
     'virtrael_api' #Api RESTFUL para la base de datos virtrael
