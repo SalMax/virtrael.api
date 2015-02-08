@@ -15,8 +15,8 @@ ADMINS = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '' #poner aqui el usuario, ejemplo virtrael@gmail.com
-EMAIL_HOST_PASSWORD = '' #password de la cuenta
+EMAIL_HOST_USER = 'vitadieta.info@gmail.com'
+EMAIL_HOST_PASSWORD = '3w2UwNhp'
 EMAIL_SUBJECT_PREFIX = '[Virtrael] '
 
 
@@ -28,8 +28,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'virtrael',    # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'admin',  
-        'PASSWORD': 'virtrael', 
+        'USER': 'hygea_amdin',  
+        'PASSWORD': 'hygea2011', 
         'HOST': 'localhost',
         'PORT': '', # Set to empty string for default.
         'OPTIONS': {
