@@ -28,8 +28,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',   # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'virtrael',    # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'root',  
-        'PASSWORD': 'virtrael', 
+        'USER': 'hygea_amdin',  
+        'PASSWORD': 'hygea2011', 
         'HOST': 'localhost',
         'PORT': '', # Set to empty string for default.
         'OPTIONS': {
@@ -106,7 +106,6 @@ SECRET_KEY = 'x#=auw=%k3&&62&@-$o^k^x&$x0-h1q@ni8cs#btsk_4#=3&_v'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-    'django.template.loaders.app_directories.load_template_source'
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -138,14 +137,11 @@ ROOT_URLCONF = 'virtrael.urls'
 WSGI_APPLICATION = 'virtrael.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    PROJECT_PATH + '/templates/'
+    (PROJECT_PATH + '/templates/'),
 )
 
 JSTEMPLATE_DIRS = (
-    # Templates handlebars para jstemplate
+   # Templates handlebars para jstemplate
     PROJECT_PATH + '/templates/jstemplates/'
 )
 
@@ -159,7 +155,7 @@ INSTALLED_APPS = (
     
     # 'django.contrib.admindocs',
     #look basado en bootstrap (www.getbootstrap.com) para la administracion de Django 
-    'django-admin-bootstrapped', #debe estar ANTES de la app 'django.contrib.admin'
+    'django_admin_bootstrapped', #debe estar ANTES de la app 'django.contrib.admin'
     'django.contrib.admin', #administracion de django
     'tastypie', #API de servicios WEB,
     'south',    #API para la gestión de la bd
