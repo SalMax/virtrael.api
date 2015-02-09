@@ -120,15 +120,18 @@ http://virtrael.cloudapp.net/admin
 ```
 Ahí tienes una administración generada por Django para poder trabajar cómodamente con la base de datos de Virtrael.
 
-Para usar la api:
+##Consultas básicas para Virtrael.api##
+
+
 
 ```
-http://virtrael.cloudapp.net/api/virtrael/<nombre_del_recurso>/?format=json
+http://virtrael.cloudapp.net/api/virtrael/<nombre_del_recurso>/<parametros_opcionales/?format=json
 ````
+**nota**: Al final de cada consulta siempre debemos añadir `?format=json` para poder obtener el resultado en el formato adecuado.
 
 Esa consulta genérica nos devuelve toda la información disponible sobra el recurso consultado.
 ###Recursos disponibles###
-* `user_profile` ejemplo: http://virtrael.cloudapp.net/api/virtrael/user_profile/?format=json
+* `user_profile`
 * `user_avatar` 
 * `carer_patient`
 * `thearpist_patient`
@@ -139,6 +142,18 @@ Esa consulta genérica nos devuelve toda la información disponible sobra el rec
 * `partial_result`
 * `session_log`
 
+###Opciones disponibles para consulta###
+
+* `\<id>\` : podemos indicar un id para obtener una entrada concreta del recurso.
+* `\schema\` : Nos devuelve un resumen del estado del recurso y de todas las operaciones que podemos hacer sobre él.
+* `\set\<id1>;<id2>\` : Devuelve un rango de de entradas del recurso, que van desde `<id1>` a `<id2>`.
+
+ Ejemplos: 
+ http://virtrael.cloudapp.net/api/virtrael/exercise_error/?format=json
+ http://virtrael.cloudapp.net/api/virtrael/exercise_error/1/?format=json
+ http://virtrael.cloudapp.net/api/virtrael/exercise_error/schema/?format=json
+ http://virtrael.cloudapp.net/api/virtrael/exercise_error/set/1;5/?format=json
+ 
 
 
 
